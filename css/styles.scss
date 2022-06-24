@@ -1,0 +1,17 @@
+$iconos: 2.5%;
+$nav_text_color: white;
+
+p {
+    text-align: justify;
+}
+
+.redes-sociales {
+    width: $iconos;
+}
+
+.nav-link {
+    color: $nav_text_color;
+}
+.nav-link:hover {
+    color: gray;
+}

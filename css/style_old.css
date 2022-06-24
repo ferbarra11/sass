@@ -1,0 +1,500 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Urbanist:wght@200&display=swap');
+
+
+
+/* Normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 64% ;
+}
+
+body {
+    background-image:url(../img/blackbricks.jpg);
+    background-size:cover;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type:none ;
+    display: flex;
+    padding: 1rem;
+    flex-flow: row wrap;
+}
+
+a {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large ;
+    text-decoration: none;
+    color: #1a2c2f;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-flow:column;
+    max-height: 9.375rem;
+    background-image: url(../img/aquabricks.jpg);
+    background-size: cover;
+    padding: .3rem;
+    width: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+li {
+    padding: 1rem;
+    justify-content: space-around;  
+}
+
+
+
+.navigation__logo {
+    display: flex;
+    overflow:visible;
+    min-height: 70px;
+    max-height: 127px;
+}
+
+/* used in media query */
+.navigation__logo{ 
+    display: inline-block;
+    width:75px;
+    overflow:visible;
+    min-height: 75px;
+    max-height: 75px;
+}*/
+
+
+#logo__img {
+    box-sizing: border-box;
+    overflow:hidden;
+    min-height: 70px;
+    max-height: 85px;
+    width: 100%;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+}
+
+.box   {
+    display: flex;
+    flex-direction: column;
+    gap:10rem;
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink:1 ;    
+}
+
+.box__info{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4em;;
+}
+
+/*section {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 100;
+    width: 200px;
+    height: 50px;
+}*/
+
+
+.contacto {
+    margin-top: 9px;
+    margin-left: 9px;
+}
+.contacto__titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
+    font-weight: bolder;
+    color: #f49f0a;
+}
+
+.titulo__parrafo{
+    font-family:'Times New Roman', Times, serif ;
+    color:bisque; 
+}
+
+/* div, form{
+    display:inline-block;
+    box-sizing: content-box;
+    margin-top:30px;
+    margin-bottom: 30px;
+} */
+
+#sucursales{
+    border-top:45px;
+    color:bisque;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.contenido_tarjeta{
+    color:rgb(255, 213, 5);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tarjeta__parrafo{
+    color:aqua;
+}
+
+.seccion{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    font-weight: lighter;
+    color: #EE6352;
+}
+.seccion__nos{ /*Modifica el Nosotros*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:xxx-large;
+    font-weight: lighter;
+    color: #09c8fd;
+}
+
+section h2{
+    font-size: large;
+    font-weight: bold;
+    color: #fbd981;
+}
+
+.seccion p{
+    color: whitesmoke;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.video{
+    margin-top:30px;
+    margin-left:0px;
+    margin-bottom: 30px;
+}
+
+
+.llama{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor__titulo{
+    color: #f49f0a;
+    font-size: x-large;
+} 
+ 
+.redes {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    padding: 0 1.4rem 0 1.4rem;
+}
+
+.redes__icon {
+    padding: 0.5em; ;
+
+
+}        
+
+footer {
+    display: flex;
+    background-image: url(../img/aquarelle.jpg);
+    background-size:cover;
+    background-color: aquamarine;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-flow:wrap;
+    width:100%;
+    bottom: 0;
+    position:fixed;
+}
+
+footer picture a img {
+    flex-flow:wrap;
+    max-height: 100px;
+}
+
+.contenedor-grid {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 90px 90px;
+    grid-row-gap: 1rem;
+    grid-column-gap:1rem ;
+
+}
+
+.item1  {
+    border-radius: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.item6  {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.contenedor-grid1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 553px 110px 110px;
+    grid-template-rows: 110px 311px 110px;
+    grid-row-gap: 5rem;
+    grid-column-gap:3.7rem ;
+
+}
+
+.item1 h1{
+    border-radius: black;
+    font-size:xx-large;
+    text-align: center;
+
+}
+
+.item4a__info{
+    text-align:justify;
+    color: #f49f0a;
+    font-size: large;
+}
+
+
+
+
+#parrafo {
+    margin-top: 8px;
+    color:#fbd981;
+    font-size: medium;
+}
+
+#contact {
+    color: antiquewhite;
+} 
+
+main {
+    margin-top:0%;
+    margin-bottom:20rem;
+}
+
+
+
+
+@media only screen and (max-width: 480px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        display: none;
+    }
+
+    ul{
+        display: none;
+    }
+    header {
+        /* display:inline-block; */
+        box-sizing:content-box;
+        width:400px;
+        max-height:75px;
+        /* background:aquamarine; */
+    }
+    
+    .header__navigation{
+        align-content: center;
+        justify-content: space-around;
+        
+
+    }
+    .navigation__logo{
+        display: inline-block;
+        width:75px;
+        overflow:visible;
+        min-height: 75px;
+        max-height: 75px;
+    }
+
+    nav {
+        display:flex;
+        /* margin-top:.16rem;
+        margin-left:11px; */
+        border-left:5px;
+        width: 100%;
+        max-height:90px;
+        color:white;
+    }
+
+    a {
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:small;
+        text-decoration: none;
+        color: #00ff22;
+    }
+
+    ul {
+        box-sizing:content-box ;
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+ .menu {
+    list-style-type: none;
+ }   
+}
+    
+       
+/* ESTILOS PARA SABORES */
+
+.contain-sabores {
+    max-width: 1200px;
+    max-height: 0 auto;
+    align-items:center ;
+    
+}
+
+.contain-sabores .contain-sabores__encabezado {
+    display: inline;
+    max-width: fit-content;
+    align-items: center;
+    color:#ffeffe;
+
+}
+
+.encabezado__menu h1 {
+   
+}
+
+.encabezado__sabores {
+
+}
+
+.lista__sabores ul {
+    /* color:#03f7ebff ; */
+}
+
+.bases #leche{
+    color:#03f7ebff;
+    align-items:center;
+}
+
+.bases #agua{
+    color:rgb(247, 60, 3) ;
+}
+
+.bases #yogurt{
+    color:rgb(235, 229, 194) ;
+}
+
+.bases #alcohol{
+    color:#03f7ebff ;
+}
+
+
+
+.bases .bases__leche {
+    align-items:center;
+}
+
+.bases__leche {
+    display:flex;
+    align-items:center;
+    /* justify-content: space-around; */
+    padding: 2rem 0;
+    /* border-bottom: 2px solid rgb(208, 41, 91); */
+    background-image: url(../img/aquabricks.jpg);
+    background-size: cover;
+    /* max-width:66px;
+    min-height: auto; */
+    /* display:inline-block;
+    box-sizing:content-box;
+ */
+    
+}
+
+.leche__lista li{
+    display:inline-block;
+    flex-direction:column;
+    color: #f49f0a;
+}
+
+.bases__agua {
+    color:#00b295ff;
+    max-width:60px;
+    max-height: 75px;
+}
+
+.agua__lista li{
+    display:inline-flex;
+    flex-direction:column;
+    color: #7fbee1;
+}
+
+.bases__yogurt {
+    color:#73956fff ;
+    max-width:60px;
+    max-height: 75px;
+}
+.yogurt__lista {
+    color:#00b295ff;
+}
+.bases__alcohol {
+    color: #95d7aeff;
+    max-width:60px;
+    max-height: 75px;
+
+}
+.alcohol__lista {
+    color:#00b295ff;
+}
